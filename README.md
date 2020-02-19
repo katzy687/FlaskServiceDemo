@@ -1,14 +1,17 @@
 # FlaskServiceWin32
 Python Flask sample for windows service registration.
 
-## Requirement
-  * pywin32 - [Python for Windows Extensions](http://sourceforge.net/projects/pywin32/files/)
+## Requirements
+  * pywin32, flask, waitress
+  * Python 3.7.1 for this demo
 
 ## how to setup
-  1. install pywin32
-  2. edit win32_service.py to modify  `svc_name` and  `svc_display_name`
-  3. admin cmd open
-  4. service install: `#python win32_service.py install`
-  5. check service: `#sc query svc_name`
-  6. You can stop: `#sc stop svc_name`
-  7. If you want to delete this service: `#sc delete svc_name`
+  * Pip Install Requirements to python environment
+  * In service class,  modify  name, display name, and description
+  * admin cmd open
+  * service install: `#python service_name.py install`
+  * check service: `#sc query svc_name`
+  * update service: `#python service_name.py update`
+  * Start service: `#sc start svc_name` or `#python service_name.py start`
+  * Stop service: `#sc stop svc_name` or `#python service_name.py stop`
+  * If you want to delete this service: `#sc delete svc_name`
