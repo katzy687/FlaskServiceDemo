@@ -6,7 +6,7 @@ Python Flask sample for windows service registration.
   * Python 3.7.1 for this demo
 
 ### To Setup
-  * Pip Install Requirements to python environment
+  * Pip Install Requirements to python environment (version 3.7.1)
   * In service class,  modify  name, display name, and description
   * admin cmd open
   * service install: `#python service_name.py install`

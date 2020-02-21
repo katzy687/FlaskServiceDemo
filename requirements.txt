@@ -1,3 +1,3 @@
-pywin32
-flask
-waitress
+pywin32==227
+flask==1.1.1
+waitress==1.4.3
