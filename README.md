@@ -7,6 +7,9 @@ Python Flask sample for windows service registration.
 
 ### To Setup
   * Pip Install Requirements to python environment (version 3.7.1)
+  * Add path of python executable and pywin32_system32 package to **System** environment Variables (not just user variables)
+  - C:\Users\Administrator\AppData\Local\Programs\Python\Python37
+  - C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Lib\site-packages\pywin32_system32
   * In service class,  modify  name, display name, and description
   * admin cmd open
   * service install: `#python service_name.py install`
@@ -19,3 +22,4 @@ Python Flask sample for windows service registration.
 ### Research Links used
 - https://www.thepythoncorner.com/2018/08/how-to-create-a-windows-service-in-python/
 - https://gist.github.com/ddelpero/7812e1baac86733fe61dea1c3350cd1f
+- https://stackoverflow.com/questions/41200068/python-windows-service-error-starting-service-the-service-did-not-respond-to-t
